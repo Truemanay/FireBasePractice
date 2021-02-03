@@ -14,8 +14,8 @@ const app = express();
 /**
  * Routes / Endpoints
  */
-app.get("/truman", (_, res) => {
-  res.send("truman sux");
+app.get("/truman/:id", (req, res) => {
+  res.send(`truman ${req.params.id}`);
 });
 /**
  * Example
