@@ -14,8 +14,15 @@ const app = express();
 /**
  * Routes / Endpoints
  */
-app.get("/truman/:id", (req, res) => {
-  res.send(`truman ${req.params.id}`);
+app.get("/truman/:adjective", (req, res) => {
+  res.send(`truman ${req.params.adjective} 🎉`);
+});
+
+app.get("/return-some-json-data", (_, res) => {
+  res.json({
+    truman: "is awesome",
+    august: "ehh",
+  });
 });
 /**
  * Example
