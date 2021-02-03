@@ -44,7 +44,7 @@
     },
     "ui": {
       "enabled": true,
-      "port": 400
+      "port": 4000
     }
   }
 }
