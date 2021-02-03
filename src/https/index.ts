@@ -14,7 +14,9 @@ const app = express();
 /**
  * Routes / Endpoints
  */
-
+app.get("/truman", (_, res) => {
+  res.send("truman sux");
+});
 /**
  * Example
  * Start writing Firebase Functions
